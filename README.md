@@ -10,6 +10,17 @@ Integrates [I18n.js](https://github.com/fnando/i18n-js) with React Native. Uses 
 
 Add `RNI18n.xcodeproj` to **Libraries** and add `libRNI18n.a` to **Link Binary With Libraries** under **Build Phases**. [More info and screenshots about how to do this is available in the React Native documentation](http://facebook.github.io/react-native/docs/linking-libraries-ios.html#content).
 
+You also need to add the **localizations** you intend to support to the iOS project. To do that
+open
+
+```
+$ open <your-project>.xcodeproj
+```
+
+And add the localizations you will support as shown here:
+
+TBD.
+
 ### Android
 
 Add `react-native-i18n` to your `./android/settings.gradle` file as follows:

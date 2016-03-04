@@ -15,9 +15,14 @@
 @implementation RNI18n
 RCT_EXPORT_MODULE();
 
--(NSString*) getCurrentLocale{
-    NSString *localeString=[[NSLocale currentLocale] localeIdentifier];
-    return localeString;
+-(NSString*) getCurrentLocale {
+    NSArray *localizations = [[NSBundle mainBundle] preferredLocalizations];
+
+    if ([localizations count] > 0) {
+        return localizations[0];
+    } else {
+        return @"en";
+    }
 }
 
 - (NSDictionary *)constantsToExport

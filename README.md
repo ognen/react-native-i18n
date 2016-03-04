@@ -19,7 +19,7 @@ $ open <your-project>.xcodeproj
 
 And add the localizations you will support as shown here:
 
-TBD.
+![adding locales](docs/adding-locales.png)
 
 ### Android
 
